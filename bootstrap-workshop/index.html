@@ -26,6 +26,7 @@
         align-items: center;
         padding-top: 20px;
       }
+
       .card-title {
         font-family: "Playfair Display", serif;
         font-weight: 700;
@@ -51,6 +52,9 @@
         width: 100%;
         font-size: small;
       }
+      .btn.btn-success:hover {
+        background-color: #2f6c5f;
+      }
       del {
         color: #4a4949;
         font-size: small;
@@ -59,6 +63,10 @@
         display: flex;
         justify-content: left;
       }
+      .col-md-4 {
+        display: flex;
+        justify-content: center;
+      }
       h3 {
         font-family: "Matemasie", sans-serif;
         font-weight: 400;
@@ -66,36 +74,64 @@
         font-size: 2rem;
         color: #3d8168;
       }
-      @media (max-width: 768px) {
+      .img-fluid {
+        width: 300px;
       }
     </style>
   </head>
 
   <body>
     <div class="contenedor">
-      <div class="card" style="width: 18rem">
-        <img src="image-product-mobile.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h7 class="card-pre-title">Perfume</h7>
-          <h4 class="card-title">Gabrielle Essence Eau De Parfum</h4>
-          <p class="card-text">
-            A floral, solar and voluptuous interpretation compose by Oliver
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                <h3>$149.99</h3>
+      <div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              id="imagen-marca"
+              src=""
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+            <script>
+              function reAjust() {
+                let imagen = document.getElementById("imagen-marca");
+
+                if (screen.width < 770) {
+                  imagen.src = "image-product-mobile.jpg";
+                } else {
+                  imagen.src = "image-product-desktop.jpg";
+                }
+              }
+              reAjust();
+
+              window.addEventListener("resize", reAjust);
+            </script>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h7 class="card-pre-title">Perfume</h7>
+              <h4 class="card-title">Gabrielle Essence Eau De Parfum</h4>
+              <p class="card-text">
+                A floral, solar and voluptuous interpretation compose by Oliver
+                Polge, Perfumer-Creator for the House of CHANEL.
+              </p>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <h3>$149.99</h3>
+                  </div>
+                  <div class="col izq">
+                    <p>
+                      <del>$169.99</del>
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col izq">
-                <p>
-                  <del>$169.99</del>
-                </p>
-              </div>
+
+              <button type="button" class="btn btn-success">
+                🛒 Add to Cart
+              </button>
             </div>
           </div>
-
-          <button type="button" class="btn btn-success">🛒 Add to Cart</button>
         </div>
       </div>
     </div>
