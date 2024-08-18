@@ -2,6 +2,8 @@
 
 # Pagina con Bootdtrap https://maosuarez.github.io/bootstrap-work/
 
+# Pagina con Tailwindcss https://maosuarez.github.io/tailwindcss-work/
+
 
 Reto de HTML y CSS con Bootstrap y TailwindCSS
 
