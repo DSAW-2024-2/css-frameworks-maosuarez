@@ -2,7 +2,7 @@
 
 # Pagina con Bootdtrap [https://maosuarez.github.io/bootstrap-work/](https://dsaw-2024-2.github.io/css-frameworks-maosuarez/bootstrap-workshop/)
 
-# Pagina con Tailwindcss https://maosuarez.github.io/tailwindcss-work/
+# Pagina con Tailwindcss [https://maosuarez.github.io/tailwindcss-work/](https://dsaw-2024-2.github.io/css-frameworks-maosuarez/tailwindcss-workshop/)
 
 
 Reto de HTML y CSS con Bootstrap y TailwindCSS
