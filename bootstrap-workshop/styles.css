@@ -1,0 +1,60 @@
+.basic-mao {
+  background-color: #f0f0f0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.card-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #191919;
+  line-height: 0.9;
+  font-size: 1.8rem;
+}
+.card-pre-title {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  color: #9c9c9c;
+}
+.card-text {
+  font-family: "Playfair Display", serif;
+  color: #4a4949;
+  font-size: medium;
+}
+.btn.btn-success {
+  background-color: #3d8168;
+  color: #e2fff5;
+  width: 100%;
+  font-size: small;
+}
+.btn.btn-success:hover {
+  background-color: #2f6c5f;
+}
+del {
+  color: #4a4949;
+  font-size: small;
+}
+.col.izq {
+  display: flex;
+  justify-content: left;
+}
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #3d8168;
+}
+.img-fluid {
+  width: 300px;
+}
