@@ -58,3 +58,13 @@ h3 {
 .img-fluid {
   width: 300px;
 }
+
+@media (max-width: 780px) {
+  .card-body {
+    max-width: 320px;
+  }
+  .col-md-6 {
+    display: flex;
+    justify-content: center;
+  }
+}
